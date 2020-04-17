@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-size: 16px;
+    line-height: inherit;
+    font-family: "Lato";
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+.maintenance {
+    position: relative;
+    width: 100%;
+    height: calc(100vh);
+    display: table;
+}
+.maintenance::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .05;
+    z-index: -1;
+    background-image: url(../images/pattern_bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.reach-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 10%;
+}
+.reach-logo img {
+    width: 100%;
+}
+.reach-content {
+    text-align: center;
+}
+.reach-content h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin:1.5rem 0rem;
+    font-weight: bold;
+}
+.reach-content h4 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin:1.5rem 0rem;
+    font-weight: bold;
+}
+.reach-content p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+}
+.reach-content p a {
+    color: #ef4325;
+}
